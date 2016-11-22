@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/mac"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user.myapplication.MainActivity" />
+        <activity
+            android:name="com.example.user.myapplication.ActivityComtechComputadoras"
+            android:parentActivityName="com.example.user.myapplication.ActivityTienda_Comtech" />
+        <activity
+            android:name="com.example.user.myapplication.ActivityTienda_Comtech"
+            android:parentActivityName="com.example.user.myapplication.MainActivityMenuPpal" />
+        <activity
+            android:name="com.example.user.myapplication.ActivityPantalla_ZonaGamer"
+            android:parentActivityName="com.example.user.myapplication.ActivityTienda_Comtech" />
+        <activity
+            android:name="com.example.user.myapplication.ActivitySevasaComputadoras"
+            android:parentActivityName="com.example.user.myapplication.ActivityTiendaSevasa" />
+        <activity
+            android:name="com.example.user.myapplication.ActivityTiendaSevasa"
+            android:parentActivityName="com.example.user.myapplication.MainActivityMenuPpal" />
+        <activity android:name="com.example.user.myapplication.MainActivityMenuPpal" >
+        </activity>
+        <activity
+            android:name="com.example.user.myapplication.splash"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
